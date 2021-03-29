@@ -1,5 +1,18 @@
 # Experiment with http-sig
 
+So this doesn't work as noted below and I filed
+[issue/9](https://github.com/PassFort/http-signatures/issues/9)
+
+I was hoping to use this with [Signed Endpoint Examples for POST /api/v3/order](https://github.com/binance-us/binance-official-api-docs/blob/fc916164ae04eb2e95ff7f98c2d49d8d6bd6d096/rest-api.md#signed-endpoint-examples-for-post-apiv3order)
+but it Diggory Blace (@Diggsey) confirmed the unsurprising
+fact that binance.us API's don't conform to the [W3C CCG](https://github.com/w3c-ccg) RFC
+so, for now at least I'm not going to persue this any farther.
+Although, I could see possibling using this in other projects.
+But there is one caveate, the W3C CCG is working on a new spec,
+so we'll have to see.
+
+## main.rs
+
 I've taken this from [the docs](https://docs.rs/http-sig/0.3.1/http_sig/#example-usage-reqwest):
 ```
 use reqwest;
